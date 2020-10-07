@@ -166,7 +166,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="RxJava"><a href="#RxJava" class="headerlink" title="RxJava"></a>RxJava</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>RxJava是基于响应式编程的框架，响应式编程的思想就是一个事件发生后，监听着这个事件的监听器马上做出响应。类似于平常的开关灯。当我们打开灯的开关时，灯马上亮了；当我们关闭灯的开关时，灯马上熄了。这个过程中，灯对我们控制开关的事件做出了响应。在Android中，设置按钮监听器也用到了响应式的思想，当有点击事件发生时，OnClickListener马上执行。也就是说OnClickListener时刻观察着按钮，当按钮被点击时，OnClickListener马上做出了响应。</p>
+        <p>title: 响应式编程需要的三个框架：RxJava2、RxAndroid、RxLifecycle（Kotlin）<br>date: 2018-10-17 17:14:37<br>tags:</p>
+<ul>
+<li>RxJava2</li>
+<li>RxAndroid</li>
+<li>RxLifecycle</li>
+<li>观察者模式<br>categories: github 三方库</li>
+</ul>
+<h2 id="RxJava"><a href="#RxJava" class="headerlink" title="RxJava"></a>RxJava</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>RxJava是基于响应式编程的框架，响应式编程的思想就是一个事件发生后，监听着这个事件的监听器马上做出响应。类似于平常的开关灯。当我们打开灯的开关时，灯马上亮了；当我们关闭灯的开关时，灯马上熄了。这个过程中，灯对我们控制开关的事件做出了响应。在Android中，设置按钮监听器也用到了响应式的思想，当有点击事件发生时，OnClickListener马上执行。也就是说OnClickListener时刻观察着按钮，当按钮被点击时，OnClickListener马上做出了响应。</p>
 <p>RxJava中的三个基本概念：观察者Observer，被观察者Observable，订阅subscribe。当观察者订阅了被观察者，被观察者有事件发生时，观察者可以做出响应。</p>
 <p>RxAndroid是JakeWharton对RxJava做的一个扩展，主要是为了在Android中更方便的切换到主线程</p>
 <p>RxJava的Github地址为：<a href="https://github.com/ReactiveX/RxJava" target="_blank" rel="noopener">https://github.com/ReactiveX/RxJava</a></p>
@@ -498,7 +505,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
